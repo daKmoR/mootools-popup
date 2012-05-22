@@ -1,0 +1,20 @@
+name: "PopUp"
+exports: "mootools-popup.js"
+web: "[mooforum.net](http://mooforum.net)"
+description: "MooTools PopUp Behavior"
+license: "[MIT License](http://mootools.net/license.txt)"
+copyright: "&copy; [mooforum](http://mooforum.net)"
+authors: "[Thomas Allmer](http://mooforum.net)"
+
+author: daKmoR
+category: Interface
+tags: [animation, gallery, popup, lightbox]
+#docs: http://url.to.docs
+#demo: http://url.to.demo
+#current: 0.5
+
+sources:
+  - "Source/Overlay.js"
+  - "Source/PopUp.js"
+  - "Source/Delegators/Delegator.PopUpControls.js"
+  - "Source/Behaviors/Behavior.PopUp.js"
