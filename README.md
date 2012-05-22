@@ -3,7 +3,7 @@ PopUp Behavior
 
 This plugin sugguest the use of Behaviors. Therefore usually you don't have to write JavaScript just HTML5 data-* attributes.
 
-![Screenshot](https://github.com/daKmoR/mootools-slide/raw/master/screen.png)
+![Screenshot](https://github.com/daKmoR/mootools-popup/raw/master/screen.png)
 
 How to use
 ----------
