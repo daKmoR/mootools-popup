@@ -1,12 +1,17 @@
-.popUp { background: #fff; padding: 15px; }
+.popUp {
+	background: #fff;
+	padding: 15px;
+}
+
 .spinner {
 	position: absolute;
 	opacity: 0.9;
-	filter: alpha(opacity=90);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
 	z-index: 999;
 	background: #fff;
+	filter: alpha(opacity=90);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
 }
+
 .spinner-msg {
 	text-align: center;
 	font-weight: bold;

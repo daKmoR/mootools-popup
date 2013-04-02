@@ -2,9 +2,9 @@
 ---
 
 name: PopUp
-description: allows to create almost any Sliding Stuff (Galleries, Tabs...) with multiple effects [CSS:Stack/Source/Galleries/PopUp/Css/PopUpBase.css]
+description: allows to create almost any Sliding Stuff (Galleries, Tabs...) with multiple effects [CSS:PopUp/Source/Css/PopUpBase.css]
 license: MIT-style license.
-requires: [/Slide, /Overlay]
+requires: [Slide/Behavior.Gallery.Element, /Overlay]
 provides: PopUp
 
 ...
@@ -58,18 +58,17 @@ var PopUp = new Class({
 	addElement: function(element) {
 		if (this.slide) {
 			var elementToAdd = element.clone();
-			elementToAdd.set('data-behavior', 'Slide.Element')
-				.erase('data-trigger')
-				.set('data-slide-element-isstartelement', 'true');
+			elementToAdd.set('data-behavior', 'Gallery.Element')
+				.erase('data-trigger');
 
 			if (Type.isNumber(this.options.width)) {
-				elementToAdd.set('data-slide-element-width', this.options.width);
+				elementToAdd.set('data-gallery-element-width', this.options.width);
 			}
 			if (Type.isNumber(this.options.height)) {
-				elementToAdd.set('data-slide-element-height', this.options.height);
+				elementToAdd.set('data-gallery-element-height', this.options.height);
 			}
 			if (Type.isString(this.options.requestfilter)) {
-				elementToAdd.set('data-slide-element-requestfilter', this.options.requestfilter);
+				elementToAdd.set('data-gallery-element-requestfilter', this.options.requestfilter);
 			}
 			this.slide.grab(elementToAdd);
 		}
